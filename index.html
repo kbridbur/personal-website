@@ -21,15 +21,14 @@
       padding: 0;
       margin: 0;
       font-size: 30px;
-      border: 2px solid #ff3300;
     }
     #banner{
       width: 98%;
       height: 100%;
       padding: 0;
       margin: 0 auto;
-      border-bottom: 5px solid #000000;
-      text-align: bottom;
+      border-bottom: 3px solid #000000;
+      text-align: center;
     }
     #blankSpaceUnderBanner{
       width: 100%;
@@ -37,7 +36,39 @@
       background: #fff;
       padding: 50px;
       margin: 0;
-      border: 2px solid #ff9900;
+    }
+    #projectsParent{
+      width: 100%;
+      height: 400px;
+      padding: 0;
+      margin: 0;
+      border: 2px solid #000000;
+    }
+    #summerGameProject{
+      box-sizing: border-box;
+      background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("WebisteGameBackground.png") no-repeat center;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      float: left;
+      border-left: 1px solid #000000;
+      border-right: 1px solid #000000;
+    }
+    #summerGameProjectTextBox{
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+    #hackMITLevelDesign{
+      box-sizing: border-box;
+      background: url("HackMitLevelDesign.png") bottom;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      float: left;
+      border-left: 1px solid #000000;
+      border-right: 1px solid #000000;
     }
     </style>
     
@@ -46,12 +77,20 @@
    <body>
      <div id="bannerBackground">
        <div id="banner">
-         <!p style = "font-size:30px"> 
          KyleBridburg
-         <!/p>
        </div> <! banner end>
       </div><!bannerBackground end>
       <div id="blankSpaceUnderBanner">
       </div><!blankSpaceUnderBanner end>
+      <div id="projectsParent">
+        <div id="summerGameProject">
+          <div id="summerGameProjectTextBox">
+           <h3> Game Title </h3>
+          </div><!end summerGameProjectTextBox>
+        </div><!end summerGameProject>
+        <div id="hackMITLevelDesign">
+        
+        </div><!end hackMIT level design project>
+      </div><!background to my two projects divs>
    </body>
 </html>
