@@ -31,6 +31,43 @@ body {
 
 /* Custom Button Styles */
 
+.btn-git{
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(133,39,119,0.4); 
+}
+.btn-git:hover,
+.btn-git:focus,
+.btn-git:active {
+    color: #fff;
+    background-color: rgba(133,39,119,0.7);
+}
+    
+.btn-fb{
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(59,89,152,0.4); 
+}
+.btn-fb:hover,
+.btn-fb:focus,
+.btn-fb:active {
+    color: #fff;
+    background-color: rgba(59,89,152,0.7);
+}
+
+.btn-li{
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0, 119, 181,0.4); 
+}
+.btn-li:hover,
+.btn-li:focus,
+.btn-li:active {
+    color: #fff;
+    background-color: rgba(0, 119, 181 ,0.7);
+}
+
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
