@@ -33,6 +33,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial;
+      overflow-x: hidden;
     }
     #bannerBackground{
       background: #fff;
@@ -166,7 +167,25 @@
     #resume{
       border: 1px solid white !important;
     }
-
+    .AboutmeText{
+      font-size: 20px;
+    }
+    #blankspace{
+      width: 100%;
+      height: 200px;
+      background: #fff;
+    }
+    #aboutmerow{
+      background: #4d4dff;
+      margin: 0px !important;
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    #yellowspace{
+      width: 100%;
+      height: 50px;
+      background: #ffff80;
+    }
     a:link { text-decoration: none; color : #fff; border: 0px; -moz-outline-style: none;}
     a:active { text-decoration: underline; color : #fff; border: 0px; -moz-outline-style: none;}
     a:visited { text-decoration: none; color : #fff; border: 0px; -moz-outline-style: none;}
@@ -219,7 +238,40 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about about-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h1> ABOUT ME </h1>
+                  <hr class="star-blue"> </hr>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <div id="aboutmerow" class="row">
+      <div class="col-lg-3 col-lg-offset-3">
+        <p class="AboutmeText"> 
+          Hello and welcome to my website! I'm Kyle
+          Bridburg, a Junior at MIT studying Computer
+          Science and Engineering. I am also an aspiring
+          Game Designer and Developer. I have experience 
+          in CSS/HTML, Python and C# with plans to learn
+          Javascript in the near future. </p>
+      </div>
+      <div class="col-lg-3">
+        <p class ="AboutmeText"> 
+          For Game Development I work mainly in Unity, 
+          though I do have experience in GameMaker Studio.
+          In my free time I enjoy playing a variety of
+          games, dancing, and working as an EMT. Or simply
+          passing the time with my Brothers in Phi Kappa Theta.
+        </p>
+      </div>
+    </div>
+    <!-- Projects -->
+    <section id="about" class="about about-projects">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -249,5 +301,9 @@
           </div><!end hackMIT level design project>
         </a>
       </div><!background to my two projects divs>
+    <div id="yellowspace">
+    </div>
+    <div id="blankspace">
+    </div>
    </body>
 </html>

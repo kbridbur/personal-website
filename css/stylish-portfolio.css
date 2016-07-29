@@ -30,7 +30,7 @@ body {
 }
 
 /* Custom Button Styles */
-
+hr.star-blue,
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -40,9 +40,10 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
+hr.star-blue:after,
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
+  content: "\f192";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -61,9 +62,17 @@ hr.star-primary {
   border-color: #2C3E50;
 }
 hr.star-primary:after {
-  background-color: white;
+  background: #ffff80;
   color: #2C3E50;
 }
+hr.star-blue{
+  border-color: #2C3E50;
+}
+hr.star-blue:after{
+  background: #4d4dff;
+  color: 2C3E50;
+}
+
 
 .btn-git{
     border-radius: 0;
@@ -238,6 +247,12 @@ hr.small {
 
 .about {
     padding: 150px 0px 0px;
+}
+.about-projects{
+  background: #ffff80;
+}
+.about-about{
+  background: #4d4dff;
 }
 
 /* Services */
