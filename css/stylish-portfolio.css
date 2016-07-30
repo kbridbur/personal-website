@@ -62,7 +62,7 @@ hr.star-primary {
   border-color: #2C3E50;
 }
 hr.star-primary:after {
-  background: #ffff80;
+  background: #bfbfbf;
   color: #2C3E50;
 }
 hr.star-blue{
@@ -249,7 +249,7 @@ hr.small {
     padding: 150px 0px 0px;
 }
 .about-projects{
-  background: #ffff80;
+  background: #bfbfbf;
 }
 .about-about{
   background: #404040;
