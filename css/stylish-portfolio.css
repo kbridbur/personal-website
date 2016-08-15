@@ -73,8 +73,23 @@ hr.star-blue:after{
   color: white;
 }
 
+.btn-stm{
+    width: 44px;
+    height: 42px;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4); 
+}
+.btn-stm:hover,
+.btn-stm:focus,
+.btn-stm:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
 
 .btn-git{
+    width: 44px;
+    height: 42px;
     border-radius: 0;
     color: #fff;
     background-color: rgba(133,39,119,0.4); 
@@ -87,6 +102,8 @@ hr.star-blue:after{
 }
     
 .btn-fb{
+    width: 44px;
+    height: 42px;
     border-radius: 0;
     color: #fff;
     background-color: rgba(59,89,152,0.4); 
@@ -99,6 +116,8 @@ hr.star-blue:after{
 }
 
 .btn-li{
+    width: 44px;
+    height: 42px;
     border-radius: 0;
     color: #fff;
     background-color: rgba(0, 119, 181,0.4); 
