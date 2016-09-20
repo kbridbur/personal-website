@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>Stylish Portfolio - Start Bootstrap Theme</title>
-    
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -108,8 +108,9 @@
       margin: 0;
       box-sizing: border-box;
     }
-    .projectsParent,
-    .projectsParent-bottom{
+    .projectsParent-mid,
+    .projectsParent-bottom,
+    .projectsParent-top{
       width: 100%;
       height: 400px;
       padding: 0;
@@ -117,21 +118,32 @@
       font-size: 1.5vw;
       color: #fff;
       text-align: center;
-      border-top: 3px solid #000000;
       box-sizing: border-box;
+      background: #bfbfbf;
+    }
+    .projectsParent-top{
+      border-top: 3px solid #000000;
     }
     .projectsParent-bottom{
       border-bottom: 3px solid #000000;
     }
-    
-    #summerGameProject{
+
+    #SNNProject{
       box-sizing: border-box;
-      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/WebisteGameBackground.png) no-repeat center;
+      background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../img/SNN.png) center no-repeat;
       width: 50%;
       height: 100%;
       margin: 0;
       float: left;
       border-right: 1px solid #000000;
+    }
+    #summerGameProject{
+      box-sizing: border-box;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/WebisteGameBackground.png) no-repeat center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border: 0px 1px solid #000000;
     }
     .ProjectTextBox{
       margin: 0 auto;
@@ -149,12 +161,21 @@
     }
     #NeuronDataAnalysis{
       box-sizing: border-box;
-      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/NeuronData.png) no-repeat center center;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/NeuronData2.png) center;
       width: 50%;
       height: 100%;
       margin: 0;
       float: left;
-      border-right: 1px solid #000000;      
+      border-left: 1px solid #000000;
+    }
+    #GeneticInvesting{
+      box-sizing: border-box;
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../img/GeneticInvesting.png) center;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      float: left;
+      border-right: 1px solid #000000;
     }
     .activityDescriptionText{
       font-size: 1vw;
@@ -195,7 +216,7 @@
       margin: 0px !important;
       padding-bottom: 100px;
     }
-    #yellowspace{
+    #greyspace{
       width: 100%;
       height: 100px;
       background: #bfbfbf;
@@ -206,40 +227,39 @@
     a:link { text-decoration: none; color : #fff; border: 0px; -moz-outline-style: none;}
     a:active { text-decoration: underline; color : #fff; border: 0px; -moz-outline-style: none;}
     a:visited { text-decoration: none; color : #fff; border: 0px; -moz-outline-style: none;}
-    a:hover { text-decoration: underline; color : #fff; border: 0px; -moz-outline-style: none;} 
+    a:hover { text-decoration: underline; color : #fff; border: 0px; -moz-outline-style: none;}
     a:focus { outline: none;-moz-outline-style: none;}
     </style>
-    
+
     <script src=""></script>
    </head>
    <body>
-   
-   <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
 
+   <!-- Navigation -->
+   <!-- <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+   <nav id="sidebar-wrapper">
+       <ul class="sidebar-nav">
+           <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+           <li class="sidebar-brand">
+               <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+           </li>
+           <li>
+               <a href="#top" onclick=$("#menu-close").click();>Home</a>
+           </li>
+           <li>
+               <a href="#about" onclick=$("#menu-close").click();>About</a>
+           </li>
+           <li>
+               <a href="#services" onclick=$("#menu-close").click();>Services</a>
+           </li>
+           <li>
+               <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+           </li>
+           <li>
+               <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+           </li>
+       </ul>
+   </nav> -->
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -270,17 +290,17 @@
     </section>
     <div id="aboutmerow" class="row">
       <div class="col-lg-3 col-lg-offset-3">
-        <p class="AboutmeText"> 
+        <p class="AboutmeText">
           Hello and welcome to my website! I'm Kyle
           Bridburg, a Junior at MIT studying Computer
           Science and Engineering. I am also an aspiring
-          Game Designer and Developer. I have experience 
+          Game Designer and Developer. I have experience
           in CSS/HTML, Python and C# with plans to learn
           Javascript in the near future. </p>
       </div>
       <div class="col-lg-3">
-        <p class ="AboutmeText"> 
-          For Game Development I work mainly in Unity, 
+        <p class ="AboutmeText">
+          For Game Development I work mainly in Unity,
           though I do have experience in GameMaker Studio.
           In my free time I enjoy playing a variety of
           games, dancing, and working as an EMT. Or simply
@@ -301,14 +321,14 @@
         </div>
         <!-- /.container -->
     </section>
-      <div class="projectsParent">
-        <a href="https://github.com/kbridbur/open-world-game-2016/tree/develop">
-          <div id="summerGameProject">
+      <div class="projectsParent-top">
+        <a href="https://github.com/kbridbur/spiked-tea">
+          <div id="SNNProject">
             <div class="ProjectTextBox">
-             <h3> Relax </h3>
-             <p class="activityDescriptionText"> Proceduraly generated, adventure game </p>
-            </div><!end summerGameProjectTextBox>
-          </div><!end summerGameProject>
+             <h3> Spiking Neural Network </h3>
+             <p class="activityDescriptionText"> Creating a Spiking Neural Network framework in Javascript </p>
+           </div><!end SNN text>
+         </div><!end SNNProject>
         </a>
         <a href="https://raptor.haxkcd.com/">
           <div id="hackMITLevelDesign">
@@ -318,10 +338,10 @@
             </div><!end hackmitProjectTextBox>
           </div><!end hackMIT level design project>
         </a>
-      </div><!background to my two projects divs>
-      <div class="projectsParent projectsParent-bottom">
+      </div><!end upper project div>
+      <div class="projectsParent-mid">
         <a href="https://github.com/kbridbur/GeneticInvesting">
-          <div id="summerGameProject">
+          <div id="GeneticInvesting">
             <div class="ProjectTextBox">
              <h3> Genetic Investing </h3>
              <p class="activityDescriptionText"> Exploring investment strategies using genetic algorithms </p>
@@ -329,15 +349,25 @@
           </div><!end summerGameProject>
         </a>
         <a href="https://github.com/kbridbur/Neuronal-Data-Analysis">
-          <div id="hackMITLevelDesign">
+          <div id="NeuronDataAnalysis">
             <div class="ProjectTextBox">
              <h3> Neuronal Data Analysis </h3>
              <p class="activityDescriptionText"> Created a tool for analyzing large pools of fiber photometry data </p>
             </div><!end hackmitProjectTextBox>
           </div><!end hackMIT level design project>
         </a>
-      </div><!background to my two projects divs>
-    <div id="yellowspace">
+      </div><!end mid project div>
+      <div class="projectsParent projectsParent-bottom">
+        <a href="https://github.com/kbridbur/open-world-game-2016/tree/develop">
+          <div id="summerGameProject">
+            <div class="ProjectTextBox">
+             <h3> Relax </h3>
+             <p class="activityDescriptionText"> Proceduraly generated, adventure game </p>
+            </div><!end summerGameProjectTextBox>
+          </div><!end summerGameProject>
+        </a>
+      </div><!end lower project div>
+    <div id="greyspace">
     </div>
     <div id="blankspace">
     </div>
